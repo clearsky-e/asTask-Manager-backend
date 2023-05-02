@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 // the cors is used to connect the backend and frontend, since both are running on the differnt ports, it helps to manage that
 app.use(cors({
-    origin: ["http://localhost:/3000", "https://asTask-Manager.onrender.com"]
+    origin: ["https://astask-manager.onrender.com"]
 }));
 // this is also a custom middleware. The express.urlencoded() function is a built-in middleware function in Express. It parses incoming requests 
 app.use(taskRoutes)
